@@ -1,0 +1,1002 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+.header-container {
+    background-image: url('images/house1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 30px 40px; /* Increased padding for more spacing */
+    min-height: 400px; /* Ensures the section is visibly longer */
+    transition: background-image 1s ease-in-out;
+}
+
+.brand-highlight {
+    color: #E7C873;
+}
+
+.brand-title {
+    font-size: 36px;
+    margin: 0;
+    
+}
+.brand-link{
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 6px 0; /* Reduced margin to move it closer to the top */
+    position: relative; /* Optional: Can use absolute positioning for finer control */
+    top: -80px; /* Moves the navigation links upward */
+    left: -640px; /* Moves the navigation links to the right */
+    font-size: 53px;
+    color: inherit;
+
+}
+.register-link{
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+}
+
+.brand-tagline {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 6px 0; /* Reduced margin to move it closer to the top */
+    position: relative; /* Optional: Can use absolute positioning for finer control */
+    top: -88px; /* Moves the navigation links upward */
+    left: -640px; /* Moves the navigation links to the right */
+}
+.brand-tagline2{
+    margin: 10px 0;
+    color: #E7C873;
+    position: relative; /* Optional: Can use absolute positioning for finer control */
+    top: 300px; /* Moves the navigation links upward */
+    display: flex;
+    justify-content: center;
+    font-size: 48px; /* Reduce font size */
+    top: 0; /* Center vertically */
+
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 1px 0; /* Reduced margin to move it closer to the top */
+    position: relative; /* Optional: Can use absolute positioning for finer control */
+    top: -370px; /* Moves the navigation links upward */
+    right: -240px; /* Moves the navigation links to the right */
+}
+
+
+
+.nav-link {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E7C873;
+}
+
+.login-container {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Title Styling */
+.login-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+/* Style for the login prompt container */
+#login-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Style for the inner container of the prompt */
+.login-prompt-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the prompt text */
+.login-prompt-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons container */
+.login-prompt-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Base button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Login/Register button */
+.login-btn {
+    background-color: #007BFF; /* Blue color */
+    color: #fff;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Close button */
+.close-btn {
+    background-color: #f44336; /* Red color */
+    color: #fff;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Button focus styles */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+
+/* Input Fields Styling */
+.login-form-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-form-input:focus {
+    border-color: #E7C873;
+    outline: none;
+}
+
+/* Submit Button Styling */
+.login-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+    background-color: #E7C873;
+}
+
+/* Language Selector Styling */
+.language-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.lang-btn {
+    padding: 10px 20px;
+    font-size: 16px;  /* Increased font size for readability */
+    border-radius: 5px;
+    background-color: #E7C873;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;  /* Remove the default border */
+}
+
+.lang-btn:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.lang-btn-active {
+    background-color: #E7C873;  /* Active button will have a gold color */
+}
+.login-form-input {
+    width: 100%; /* Reduce width as needed */
+    max-width: 650px; /* Optional: Set a max width */
+    height: 40px; /* Adjust height */
+    padding: 10px 15px; /* Adjust padding inside the input */
+    font-size: 18px; /* Reduce font size if needed */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+.login-container{
+    width: 20%; /* Reduce width as needed */ 
+    right: 15px;
+    padding: 10px 18px; /* Adjust padding inside the input */ 
+}
+
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    color: rgba(26, 26, 26, 1);
+  }
+  .statistics-wrapper {
+    background-color: rgba(249, 249, 249, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 80px 92px;
+  }
+  .statistics-content {
+    display: flex;
+    width: 100%;
+    max-width: 1306px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items to the left horizontally */
+    align-items: flex-start; /* Aligns items to the top vertically */
+    margin-left: 20px; /* Adds space from the left */
+    padding-left: 20px; /* Adds space within the container */
+}
+  .statistics-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.3;
+    align-self: start;
+  }
+  .statistics-grid {
+    display: flex;
+    margin-top: 89px;
+    gap: 40px 100px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+}
+  .stat-card {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    padding: 60px 52px 123px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .stat-card2 {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    padding: 60px 52px 123px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .stat-card3 {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    padding: 60px 52px 123px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+
+  .stat-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 90px;
+    border-radius: 45px;
+    height: 100px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .stat-card:hover .stat-icon {
+    transform: translateY(-5px); /* Bounce effect */
+  }
+  .stat-card2:hover .stat-icon {
+    transform: translateY(-5px); /* Bounce effect */
+  }
+  .stat-card3:hover .stat-icon {
+    transform: translateY(-5px); /* Bounce effect */
+  }
+
+
+.stat-card:hover {
+    background-color: #E7C873; /* Gold color on hover */
+    transform: scale(1.05); /* Slightly scales the card */
+  }
+  
+.stat-card2:hover {
+    background-color: #E7C873; /* Gold color on hover */
+    transform: scale(1.05); /* Slightly scales the card */
+  }
+.stat-card3:hover {
+    background-color: #E7C873; /* Gold color on hover */
+    transform: scale(1.05); /* Slightly scales the card */
+  }
+  
+  .stat-title, .stat-value {
+    margin: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .stat-card:hover .stat-title,
+  .stat-card:hover .stat-value {
+    color: #fff; /* Change text color to white on hover */
+  }
+
+  .stat-card2:hover .stat-title,
+  .stat-card2:hover .stat-value {
+    color: #fff; /* Change text color to white on hover */
+  }
+  .stat-card3:hover .stat-title,
+  .stat-card3:hover .stat-value {
+    color: #fff; /* Change text color to white on hover */
+  }
+  .stat-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 18px;
+    text-align: center; /* Centralize text */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally if needed */
+    align-items: center; /* Centers vertically if needed */
+}
+.stat-title2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 18px;
+    text-align: center; /* Centralize text */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally if needed */
+    align-items: center; /* Centers vertically if needed */
+}
+
+.stat-title3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 60px;
+    text-align: center; /* Centralize text */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally if needed */
+    align-items: center; /* Centers vertically if needed */
+}
+
+  .stat-value {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-top: 10px;
+  }
+  .roi-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 48px;
+  }
+  .roi-title {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+    align-self: end;
+    margin-top: 47px;
+  }
+
+  .cta-container {
+    background-color: #f8f9fa; /* Light grey background */
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px; /* Space above the section */
+    border-top: 2px solid #ddd; /* Separate with a border */
+}
+
+.cta-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cta-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.cta-button-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cta-button-secondary {
+    text-decoration: none; /* Removes the underline */
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+    background-color: #495057; /* Darker grey on hover */
+}
+
+.consultation-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.consultation-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.consultation-form .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consultation-form .submit-button:hover {
+    background-color: #0056b3;
+}
+
+.required::after {
+    content: ' *';
+    color: red;
+}
+
+/* Media Queries for Mobile Devices */
+
+/* General mobile styling */
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 14px; /* Adjust font size for better readability */
+        padding: 10px;
+    }
+
+    .header-container {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        min-height: 300px; /* Adjust height for smaller displays */
+    }
+
+    .brand-title {
+        font-size: 21px; /* Scale down font size */
+    }
+
+    .brand-link {
+        font-size: 32px; /* Scale down the link font size */
+        top: -40px; /* Adjust position */
+        left: 0; /* Center align */
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        gap: 10px; /* Reduce gap */
+    }
+
+    .brand-tagline {
+        font-size: 14px; /* Reduce font size */
+        top: 0; /* Center vertically */
+        left: 0; /* Align to center */
+        text-align: center;
+        margin: 0 0 10px 0; /* Adjust margin */
+    }
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between buttons */
+        
+        text-align: center;
+        height: 70px;
+    }
+
+    
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between links */
+        position: static; /* Reset positioning */
+        margin: 10px 0;
+    }
+
+    .nav-link {
+        font-size: 16px; /* Adjust link size */
+        padding: 5px;
+    }
+
+
+
+    .login-title {
+        font-size: 20px; /* Adjust size */
+    }
+    .login-title2 {
+        font-size: 12px; /* Adjust size */
+    }
+
+
+    .login-container{
+        width: 50%; /* Reduce width as needed */ 
+        right: 100px;
+        padding: 15px 20px; /* Adjust padding inside the input */ 
+        max-width: 100%; /* Reduce width for smaller screens */
+    }
+
+    .login-form-input {
+        font-size: 14px; /* Scale down input font size */
+        padding: 10px;
+        width: 90%; /* Reduce width as needed */
+        border: 1px solid #ccc; /* Optional: Add a border */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+        max-width: 650px; /* Optional: Set a max width */
+        height: 40px; /* Adjust height */
+    }
+
+    .login-submit {
+        font-size: 12px; /* Adjust button size */
+        width: 80%; /* Reduce width as needed */
+        height: 30px; /* Adjust height */
+    }
+
+    .lang-btn {
+        font-size: 12px; /* Scale down language button font size */
+        padding: 8px 10px;
+        width: 70%; /* Reduce width as needed */
+        height: 30px; /* Adjust height */
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-width: 844px) and (orientation: landscape) {
+    .header-container {
+        min-height: 250px; /* Adjust height for landscape */
+    }
+
+    .brand-title {
+        font-size: 30px; /* Slightly larger font */
+    }
+
+    .brand-link {
+        font-size: 40px;
+        top: -20px; /* Adjust positioning */
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Retain row alignment */
+        gap: 15px; /* Adjust gap */
+        margin: 10px 0;
+    }
+
+    .login-container {
+        max-width: 60%; /* Adjust width for landscape */
+    }
+}
+
+  @media (max-width: 991px) {
+    .statistics-wrapper {
+      max-width: 100%;
+      padding: 100px 20px 0;
+    }
+    .statistics-content {
+      max-width: 100%;
+    }
+    .statistics-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+ 
+    .roi-title {
+      margin-top: 40px;
+    }
+  }
+/* Media query to reduce font size on smaller screens */
+@media (max-width: 768px) {
+    .statistics-heading {
+        font-size: 28px; /* Smaller font size for tablets and smaller screens */
+    }
+    .brand-tagline2{
+        font-size: 18px;   
+    }
+}
+
+@media (max-width: 480px) {
+    .statistics-heading {
+        font-size: 22px; /* Further reduce font size for mobile screens */
+        margin-bottom: 15px; /* Adjust margin for better spacing on mobile */
+    }
+    .brand-tagline2{
+        font-size: 18px; 
+        margin-bottom: 15px;  
+    }
+}
+/* Media query for iPhone 12 Pro (390px x 844px) */
+@media (max-width: 390px) and (max-height: 844px) {
+    .statistics-grid {
+        gap: 20px; /* Reduce gap between cards */
+        padding: 10px; /* Adjust padding to fit smaller screen */
+    }
+    .stat-card, .stat-card2, .stat-card3 {
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Optional: Adjust text size */
+    }
+    .stat-icon, .roi-icon {
+        max-width: 100%; /* Ensure icons scale correctly */
+        height: auto;
+    }
+    .stat-title, .stat-title2, .stat-title3 {
+        font-size: 16px; /* Adjust title font size for smaller screens */
+    }
+    .stat-value {
+        font-size: 14px; /* Adjust value font size for smaller screens */
+    }
+    .brand-tagline2{
+        font-size: 18px; 
+        margin-bottom: 15px;  
+    }
+    .login-form-input {
+        width: 90%; /* Expand width slightly on smaller screens */
+        max-width: 250px; /* Reduce max width for smaller devices */
+        height: 28px; /* Further reduce height */
+        font-size: 12px; /* Reduce font size */
+    }
+}
+/* Media query for iPhone 12 Pro (390px x 844px) */
+@media (max-width: 390px) and (max-height: 844px) {
+    .statistics-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the grid items horizontally */
+        align-items: center; /* Center the grid items vertically */
+        gap: 20px; /* Reduce gap between cards */
+        padding: 10px; /* Adjust padding to fit smaller screen */
+        width: 100%; /* Ensure the grid takes up the full screen width */
+        box-sizing: border-box; /* Include padding in the element's total width */
+    }
+    .stat-card, .stat-card2, .stat-card3 {
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Adjust text size */
+        max-width: 100%; /* Ensure cards don't exceed available space */
+    }
+    .stat-icon, .roi-icon {
+        max-width: 100%; /* Ensure icons scale correctly */
+        height: auto;
+    }
+    .stat-title, .stat-title2, .stat-title3 {
+        font-size: 16px; /* Adjust title font size */
+    }
+    .stat-value {
+        font-size: 14px; /* Adjust value font size */
+    }
+    .brand-tagline2{
+        font-size: 15px; 
+        margin-bottom: 12px;  
+    }
+ 
+    .brand-link{
+        font-size: 21px;
+    }
+}
+/* Responsiveness for small screens */
+@media (max-width: 480px) {
+    .login-container {
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 20px 20px; /* Adjust padding for iPhone 14 */
+        font-size: 14px; /* Adjust text size */
+        right: 60px;
+        max-width: 55%; /* Ensure cards don't exceed available space */
+    }
+    .lang-btn {
+        font-size: 14px;  /* Adjust font size for small screens */
+        padding: 8px 15px;
+    }
+}
+
+/* Media query for iPhone 14 (430px x 932px) */
+@media (max-width: 430px) and (max-height: 932px) {
+    .statistics-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the grid items horizontally */
+        align-items: center; /* Center the grid items vertically */
+        gap: 60px; /* Reduce gap between cards */
+        padding: -70px; /* Adjust padding to fit iPhone 14 screen */
+        width: 83%; /* Ensure the grid takes up the full screen width */
+        right: 40px;
+        box-sizing: border-box; /* Include padding in the element's total width */
+    }
+    .stat-card, .stat-card2, .stat-card3 {
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 40px 30px; /* Adjust padding for iPhone 14 */
+        font-size: 14px; /* Adjust text size */
+       
+        max-width: 100%; /* Ensure cards don't exceed available space */
+    }
+    .stat-icon, .roi-icon {
+        max-width: 100%; /* Ensure icons scale correctly */
+        height: auto;
+    }
+    .stat-title, .stat-title2, .stat-title3 {
+        font-size: 18px; /* Adjust title font size */
+    }
+    .stat-value {
+        font-size: 16px; /* Adjust value font size */
+    }
+    .brand-title {
+        font-size: 12px; /* Scale down font size */
+    }
+}
+
+/* Media query for devices smaller than 768px (tablets and below) */
+@media (max-width: 768px) {
+    .header-container {
+        background-image: url('images/house2.jpg'); /* New background image for tablets and smaller screens */
+        padding: 20px 30px;
+        min-height: 300px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+}
+
+    
+
+
+@media (max-width: 390px) and (max-height: 844px) {
+    body {
+        padding: 10px; /* Add a small padding for content spacing */
+    }
+
+    /* Ensure all child elements adjust to fit within the screen */
+    * {
+        box-sizing: border-box; /* Include padding and borders in width calculations */
+    }
+
+    .container {
+        width: 100%; /* Ensure container spans the full width */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    .header, .footer, .main-content {
+        width: 100%; /* Ensure all sections fit within the screen */
+        text-align: center; /* Center-align text for readability */
+    }
+
+    .image, .card, .grid {
+        width: 100%; /* Scale down images, cards, and grids */
+        max-width: 100%; /* Prevent overflowing */
+        padding: 10px; /* Add padding for proper spacing */
+    }
+    .header-container {
+        background-image: url('images/house3.jpg'); /* New background image for very small screens */
+        padding: 15px 20px;
+        min-height: 250px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */  
+    }
+
+    .consultation-form{
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 20px 20px; /* Adjust padding for iPhone 14 */
+        font-size: 14px; /* Adjust text size */
+        right: 60px;
+        max-width: 85%; /* Ensure cards don't exceed available space */
+    }
+}
+
+/* Media query for slightly larger screens (e.g., iPhone 14, 430px x 932px) */
+@media (max-width: 430px) and (max-height: 932px) {
+    body {
+        padding: 15px; /* Adjust padding for slightly larger screen */
+    }
+    .consultation-form{
+        flex: 1 1 100%; /* Cards take up 100% of available width */
+        padding: 20px 20px; /* Adjust padding for iPhone 14 */
+        font-size: 14px; /* Adjust text size */
+        right: 60px;
+        max-width: 85%; /* Ensure cards don't exceed available space */
+    }
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header, .footer, .main-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image, .card, .grid {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+    table {
+      font-size: 14px; /* Reduce font size */
+    }
+  
+    table th, table td {
+      padding: 6px; /* Reduce cell padding */
+    }
+  }
+  
+  /* Media Query for Small Devices (480px and below) */
+  @media (max-width: 480px) {
+    table {
+      font-size: 12px; /* Further reduce font size */
+      margin-top: 10px; /* Adjust margin */
+    }
+  
+    table th, table td {
+      padding: 4px; /* Further reduce padding */
+    }
+  
+    /* Add horizontal scrolling for very narrow screens */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    table {
+      display: block; /* Enable block layout for scrolling */
+      width: auto; /* Allow the table to scroll horizontally */
+    }
+  }
+  
+  /* Media Query for Extra Small Devices (360px and below) */
+  @media (max-width: 360px) {
+    table th, table td {
+      font-size: 10px; /* Shrink font size */
+      padding: 3px; /* Minimal padding */
+    }
+  }

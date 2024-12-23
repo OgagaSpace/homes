@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melcom Housing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container" id="header-container">
+        <div class="brand-title">
+            <a href="index.html" class="brand-link">
+                <span class="brand-highlight">Melcom</span>Homes
+            </a>
+        </div>
+        <div class="brand-tagline">Leading the way in Sustainable Housing</div>
+        <div class="brand-tagline2">ASPIRE - Premium Real Estate Investment in Calgary</div>
+    </div>
+
+    <nav class="nav-links" role="navigation">
+        <a href="#about" class="nav-link">ABOUT PROJECT</a>
+        <a href="#investment" class="nav-link">INVESTMENT OPPORTUNITY</a>
+        <a href="#pricing" class="nav-link">UNITS & PRICING</a>
+        <a href="#timeline" class="nav-link">PROJECT TIMELINE</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
+
+    <form class="consultation-form">
+        <label for="first-name" class="required">Name </label>
+        <div class="name-fields">
+            <input type="text" id="first-name" name="first-name" placeholder="First" required />
+            <input type="text" id="last-name" name="last-name" placeholder="Last" required />
+        </div>
+        
+        <label for="email" class="required">Email </label>
+        <input type="email" id="email" name="email" placeholder="Email" required />
+    
+        <label for="phone-number" class="required">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" oninput="validatePhoneNumber()" />
+    
+        <label for="description" class="required">Best time of day to contact me: </label>
+        <select id="contact-time" name="contact-time" required>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="anytime">Anytime</option>
+        </select>
+    
+        
+        <label for="description" class="required">Brief description of your questions or concerns</label>
+        <textarea id="description" name="description" rows="5" placeholder="Provide details here..." required></textarea>
+    
+        <label>
+            <input type="checkbox" id="newsletter-signup" name="newsletter-signup" />
+            Sign-up to our newsletter?
+        </label>
+    
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
